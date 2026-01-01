@@ -5,7 +5,7 @@ Thank you for your interest in contributing! This project welcomes contributions
 ## 🎯 Ways to Contribute
 
 ### 1. **Report Issues**
-- Found a bug? [Open an issue](https://github.com/albertsikkema/claude-config-template/issues)
+- Found a bug? [Open an issue](https://github.com/jmf-pobox/claude-config-template/issues)
 - Have a feature request? Let us know!
 - Experiencing installation problems? We want to help!
 
@@ -205,9 +205,8 @@ Not sure what to contribute? Here are some ideas:
 
 ## 📧 Questions?
 
-- **General questions**: [Open a discussion](https://github.com/albertsikkema/claude-config-template/discussions)
-- **Bug reports**: [Open an issue](https://github.com/albertsikkema/claude-config-template/issues)
-- **Private inquiries**: license@albertsikkema.com
+- **General questions**: [Open a discussion](https://github.com/jmf-pobox/claude-config-template/discussions)
+- **Bug reports**: [Open an issue](https://github.com/jmf-pobox/claude-config-template/issues)
 
 ## 🏢 Company Contributions
 
@@ -218,8 +217,6 @@ If your company uses and benefits from this project, consider:
 - **Sponsoring feature development**
 - **Providing feedback** from production use
 - **Contributing documentation** or examples
-
-Contact license@albertsikkema.com to discuss larger contributions or collaboration.
 
 ## 📜 License
 

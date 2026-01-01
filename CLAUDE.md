@@ -19,13 +19,13 @@ This repository is meant to be installed into other projects using the `install.
 **Quick Remote Install (Easiest)**:
 ```bash
 # One-line install - downloads, installs, and cleans up automatically
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash
 
 # Install from a specific branch (e.g., for testing new features)
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent
 
 # Install from a specific branch with other options
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent --force
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent --force
 ```
 
 > **Note**: Always use `/main/install.sh` in the URL. The `--branch` argument specifies which branch's content to install.

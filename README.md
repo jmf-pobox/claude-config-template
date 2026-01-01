@@ -1,14 +1,6 @@
 # Claude Code Configuration Template
 
-> **DEPRECATION NOTICE**
-> 
-> This repository is **no longer actively maintained**. I have switched to [OpenCode](https://opencode.ai/) - it's open source, feels faster, offers more model choices, and isn't tied to a single company. The Claude Code subscription limitations, rate limiting, and frequent "resources not available" errors also became frustrating.
-> 
-> This repository will remain available until **January 1, 2026** for reference purposes. Feel free to fork, copy, or use any code from this repository before then.
-> 
-> Updates will be sporadic at best.
-
----
+> **Fork Notice**: This is an actively maintained fork of [albertsikkema/claude-config-template](https://github.com/albertsikkema/claude-config-template).
 
 A powerful, reusable configuration system for [Claude Code](https://claude.com/code) that supercharges your development workflow with custom agents, intelligent slash commands, and structured project documentation.
 
@@ -16,22 +8,22 @@ A powerful, reusable configuration system for [Claude Code](https://claude.com/c
 
 **First time installation or update (preserves your work):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash
 ```
 
 **Install from a specific branch:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent
 ```
 
 **Clean reinstall (⚠️ overwrites important stuff):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --force
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --force
 ```
 
 **Clean reinstall from a specific branch:**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent --force
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --branch orchestrator-agent --force
 ```
 
 > **Note**: Always use `/main/install.sh` in the URL. The `--branch` argument specifies which branch's content to actually install.
@@ -46,12 +38,12 @@ See the [Multi-Agent Observability Dashboard](#-multi-agent-observability-dashbo
 
 **Remove configuration (preserves thoughts/):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/uninstall.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/uninstall.sh | bash
 ```
 
 **Remove everything including thoughts/ (⚠️ overwrites important stuff):**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/uninstall.sh | bash -s -- --force
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/uninstall.sh | bash -s -- --force
 ```
 
 ---
@@ -266,7 +258,7 @@ The hooks configuration is in `.claude/settings.json`. You can:
 
 ### Option 1: Use as GitHub Template 
 
-1. Click **"Use this template"** on [GitHub](https://github.com/albertsikkema/claude-config-template)
+1. Click **"Use this template"** on [GitHub](https://github.com/jmf-pobox/claude-config-template)
 2. Create your template repository
 3. Clone and use in your projects
 
@@ -274,7 +266,7 @@ The hooks configuration is in `.claude/settings.json`. You can:
 
 ```bash
 # Clone the template
-git clone https://github.com/albertsikkema/claude-config-template.git
+git clone https://github.com/jmf-pobox/claude-config-template.git
 
 # Navigate to your project
 cd /path/to/your-project
@@ -289,22 +281,22 @@ The easiest way! Downloads, installs, and cleans up automatically:
 
 ```bash
 # Install everything (recommended)
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash
 
 # Install only Claude configuration
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --claude-only
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --claude-only
 
 # Install only thoughts structure
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --thoughts-only
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --thoughts-only
 
 # Preview what will be installed (dry run)
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --dry-run
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --dry-run
 
 # Install to specific directory
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- /path/to/project
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- /path/to/project
 
 # Combine options
-curl -fsSL https://raw.githubusercontent.com/albertsikkema/claude-config-template/main/install.sh | bash -s -- --force --claude-only
+curl -fsSL https://raw.githubusercontent.com/jmf-pobox/claude-config-template/main/install.sh | bash -s -- --force --claude-only
 ```
 
 **How it works**: The remote installer downloads the repository, runs the installation with your options, and automatically cleans up temporary files.
@@ -623,8 +615,6 @@ Contributions are welcome from individuals and companies alike! We'd love to see
 - Testing requirements
 - Pull request process
 
-For questions or larger contributions, contact: license@albertsikkema.com
-
 ## 💡 Tips & Best Practices
 
 1. **Follow the workflow** - See [WORKFLOW.md](WORKFLOW.md) for the complete process
@@ -666,7 +656,7 @@ The installer automatically adds `.claude/`, `thoughts/`, and `claude-helpers/` 
 
 ### Getting Help
 
-- **Issues**: [GitHub Issues](https://github.com/albertsikkema/claude-config-template/issues)
+- **Issues**: [GitHub Issues](https://github.com/jmf-pobox/claude-config-template/issues)
 - **Documentation**: [Claude Code Docs](https://docs.claude.com)
 - **Template Updates**: Re-run the installer to update `.claude/` and add any new `thoughts/` directories
 

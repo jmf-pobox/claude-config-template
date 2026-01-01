@@ -9,7 +9,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-REPO_URL="https://github.com/albertsikkema/claude-config-template"
+REPO_URL="https://github.com/jmf-pobox/claude-config-template"
 BRANCH="main"  # Default branch
 TEMP_DIR=""
 
